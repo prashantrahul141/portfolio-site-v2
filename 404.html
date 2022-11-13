@@ -22,7 +22,11 @@
   </body>
   <script type="application/javascript">
     const query_text = document.getElementById('query-text');
-    query_text.innerText = window.location.pathname + ' !?';
+    const pathName =
+      window.location.pathname.length > 15
+        ? window.location.pathname.slice(0, 15) + '...'
+        : window.location.pathname;
+    query_text.innerText = pathName + '!?';
   </script>
   <link rel="stylesheet" type="text/css" href="/styles/commonStyles.css" />
   <style type="text/css">
