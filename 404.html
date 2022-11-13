@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <title>Prashant | 404</title>
+    <link rel="icon" type="image/png" href="/media/icons/favicon.ico" />
+  </head>
+  <body>
+    <div id="main-container">
+      <div class="each-container" id="text-container">
+        <span id="query-text"></span>
+        <span id="shrug-text">🤨</span>
+      </div>
+      <div class="each-container" id="button-container">
+        <a href="/">
+          <button id="button">Home</button>
+        </a>
+      </div>
+    </div>
+  </body>
+  <script type="application/javascript">
+    const query_text = document.getElementById('query-text');
+    query_text.innerText = window.location.pathname + ' !?';
+  </script>
+  <link rel="stylesheet" type="text/css" href="/styles/commonStyles.css" />
+  <style type="text/css">
+    #main-container {
+      width: min(90vw, 500px);
+      color: var(--colr--white);
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      margin: 2px 2px;
+      text-align: center;
+    }
+    .each-container {
+      width: 100%;
+      margin-top: 10vh;
+      margin-bottom: 10vh;
+      font-family: 'Poppins', sans-serif;
+      font-size: clamp(25px, 25pt, 6vw);
+    }
+    #button-container {
+      transform: translateX(-2%);
+    }
+
+    #button {
+      font-family: 'Poppins', sans-serif;
+      font-size: clamp(18px, 16pt, 4vw);
+      color: var(--colr--white);
+      background: rgba(255, 255, 255, 0);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 3px;
+      padding: 7px 18px;
+      cursor: pointer;
+      box-shadow: 2px 2px rgba(255, 255, 255, 0.8);
+    }
+    #button:active {
+      background: rgba(255, 255, 255, 0.04);
+      transform: translate(4%, 4%);
+      box-shadow: none;
+    }
+    @media (pointer: fine) {
+      #button:hover {
+        background: rgba(255, 255, 255, 0.04);
+        transform: translate(4%, 4%);
+        box-shadow: none;
+      }
+    }
+  </style>
+</html>
