@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <title>Prashant</title>
+    <link rel="icon" type="image/png" href="/media/icons/favicon.ico" />
+  </head>
+  <body>
+    <div id="preloader"></div>
+    <script>
+      const loader = document.getElementById('preloader');
+      window.addEventListener('load', () => {
+        loader.style.display = 'none';
+      });
+    </script>
+    <main id="MainContainer">
+      <canvas id="MainCanvas"> </canvas>
+
+      <main id="MainContent">
+        <!-- First page -->
+        <div id="pageOne">
+          <span id="pageOneTopText"> Hi, my name is </span>
+          <h1 id="pageOneNameText">Prashant&nbsp;Rahul</h1>
+          <h4 id="pageOneSubText">
+            I am a Software Developer, specializing in building Full-Stack Web
+            Applications. I make Games, Desktop Applications and Dev-Tools in my
+            free time.
+          </h4>
+        </div>
+
+        <!-- Second Page -->
+        <div id="pageTwo">
+          <h1 id="pageTwoTopText">My Experiences</h1>
+          <table id="pageTwoTable">
+            <tr class="pageTwoTableRows">
+              <td class="pagetwoTableHeadings">sit amet.</td>
+              <td class="pageTwoTableDescriptions">
+                Lorem ipsum dolor sit amet consectetur adipisicing.
+              </td>
+            </tr>
+            <tr class="pageTwoTableRows">
+              <td class="pagetwoTableHeadings">Lorem ipsum</td>
+              <td class="pageTwoTableDescriptions">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Eveniet quod repudiandae inventore!
+              </td>
+            </tr>
+            <tr class="pageTwoTableRows">
+              <td class="pagetwoTableHeadings">dolor</td>
+              <td class="pageTwoTableDescriptions">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cupiditate nisi aliquam eveniet!
+              </td>
+            </tr>
+            <tr class="pageTwoTableRows">
+              <td class="pagetwoTableHeadings">lorem</td>
+              <td class="pageTwoTableDescriptions">
+                Lorem ipsum dolor sit amet.
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- third Page -->
+        <div id="pageThree">
+          <h1 id="pageThreeTopText">Projects I've built</h1>
+
+          <div class="pageThreeCardsContainer">
+            <div class="pageThreeEachContainer" id="pageThreeContainer1">
+              <a
+                target="_blank"
+                href="https://github.com/Prashantrahul141/Coding-Train-Challenges-python"
+              >
+                <div class="pageThreeEachContentContainer">
+                  <h2 class="pageThreeCardtitle">
+                    Coding Train Challenges Python.
+                  </h2>
+                  <span class="pageThreeCardDescription"
+                    >A list of challenges done by Daniel Shiffman done in
+                    Python.
+                  </span>
+                </div>
+              </a>
+            </div>
+
+            <div class="pageThreeEachContainer" id="pageThreeContainer2">
+              <a
+                target="_blank"
+                href="https://github.com/Prashantrahul141/Simple-Blog-App-with-NEXTJS"
+              >
+                <div class="pageThreeEachContentContainer">
+                  <h2 class="pageThreeCardtitle">Minimal Blogging App.</h2>
+                  <span class="pageThreeCardDescription"
+                    >A Minimal blogging site made with NEXTJS, TypeScript,
+                    MongoDB.
+                  </span>
+                </div>
+              </a>
+            </div>
+
+            <div class="pageThreeEachContainer" id="pageThreeContainer3">
+              <a
+                target="_blank"
+                href="https://github.com/Prashantrahul141/boids_using_python"
+              >
+                <div class="pageThreeEachContentContainer">
+                  <h2 class="pageThreeCardtitle">
+                    Boids Simulation in Python.
+                  </h2>
+                  <span class="pageThreeCardDescription"
+                    >Visualizing the flocking behaviour of birds in Python.
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fourth Page -->
+        <div id="pageFour">
+          <h1 id="pageFourTopText">Getting in touch with me</h1>
+          <h4 id="pageFourSubText">
+            Although I'm currently a student and not looking for any long term
+            commitment other than small projects, my inbox is always open!
+          </h4>
+          <ul id="pageFourIconsContainer">
+            <li class="pageFourEachIcon" id="pageFourIconGithub">
+              <a
+                target="_blank"
+                href="https://github.com/Prashantrahul141"
+                aria-label="GitHub"
+              >
+                <img
+                  class="pageFourEachIconImage"
+                  src="/media/icons/iconGithub.png"
+                  alt="My Github"
+                />
+              </a>
+            </li>
+            <li class="pageFourEachIcon" id="pageFourIconInstagram">
+              <a
+                target="_blank"
+                href="https://instagram.com/prashantrahul141"
+                aria-label="Instagram"
+              >
+                <img
+                  class="pageFourEachIconImage"
+                  src="/media/icons/iconInstagram.png"
+                  alt="My Instagram"
+                />
+              </a>
+            </li>
+            <li class="pageFourEachIcon" id="pageFourIconTwitter">
+              <a
+                target="_blank"
+                href="https://twitter.com/prashrahul141"
+                aria-label="Twitter"
+              >
+                <img
+                  class="pageFourEachIconImage"
+                  src="/media/icons/iconLinkedin.png"
+                  alt="My Twitter"
+                />
+              </a>
+            </li>
+            <li class="pageFourEachIcon" id="pageFourIconLinkedin">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/prashantrahul141/"
+                aria-label="Linkedin"
+              >
+                <img
+                  class="pageFourEachIconImage"
+                  src="/media/icons/iconTwitter.png"
+                  alt="My Linkedin"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </main>
+    </main>
+  </body>
+  <link rel="stylesheet" type="text/css" href="/styles/style.css" />
+
+  <!-- Custom Vertex Shaders for Sun -->
+  <script id="vertexShader" type="x-shader/x-vertex">
+    varying vec3 vNormal;
+    void main()
+    {
+        vNormal = normalize( normalMatrix * normal );
+        gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+    }
+  </script>
+
+  <!-- Custom Frag Shader for Sun -->
+  <script id="fragmentShader" type="x-shader/x-vertex">
+    varying vec3 vNormal;
+    void main()
+    {
+      float intensity = pow( 0.1 - dot( vNormal, vec3( 0.0, 0.0, 1.0 ) ), 10.0 );
+        gl_FragColor = vec4( 2.0, 1.35, 1.0, 1.0 ) * intensity;
+    }
+  </script>
+  <!-- Custom Vertex Shaders for Stars-->
+  <script id="vertexShaderStars1" type="x-shader/x-vertex">
+    varying vec3 vNormal;
+    void main()
+    {
+        vNormal = normalize( normalMatrix * normal );
+        gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+    }
+  </script>
+
+  <!-- Custom Frag Shader for Stars-->
+  <script id="fragmentShaderStars1" type="x-shader/x-vertex">
+    varying vec3 vNormal;
+    void main()
+    {
+      float intensity = pow( 0.1 - dot( vNormal, vec3( 0.0, 0.0, 1.0 ) ), 10.0 );
+      gl_FragColor = vec4( 2.0, 1.35, 1.0, 1.0 ) * intensity;
+    }
+  </script>
+  <!-- Custom Vertex Shaders for Stars blue-->
+  <script id="vertexShaderStars2" type="x-shader/x-vertex">
+    varying vec3 vNormal;
+    void main()
+    {
+        vNormal = normalize( normalMatrix * normal );
+        gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+    }
+  </script>
+
+  <!-- Custom Frag Shader for Stars blue-->
+  <script id="fragmentShaderStars2" type="x-shader/x-vertex">
+    varying vec3 vNormal;
+    void main()
+    {
+      float intensity = pow( 0.1 - dot( vNormal, vec3( 0.0, 0.0, 1.0 ) ), 10.0 );
+      gl_FragColor = vec4( 1.0, 1.0, 255.0, 1.0 ) * intensity;
+    }
+  </script>
+  <script type="module" src="/js/index.js"></script>
+</html>

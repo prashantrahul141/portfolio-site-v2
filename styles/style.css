@@ -1,0 +1,329 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@900&display=swap');
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* Customizing Scroll Bar */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  background-color: white;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(250, 250, 250, 0.3);
+  border-radius: 10%;
+}
+/* Customzing scroll bar for forefox */
+@supports (scrollbar-color: grey black) {
+  * {
+    scrollbar-color: rgba(250, 250, 250, 0.3) rgba(0, 0, 0, 0.1);
+    scrollbar-width: thin;
+  }
+}
+
+/* Selection  */
+::-moz-selection {
+  /* color: rgb(35, 35, 35); */
+  background: rgba(230, 230, 230, 0.15);
+}
+::selection {
+  /* color: rgb(35, 35, 35); */
+  background: rgba(230, 230, 230, 0.15);
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* BASIC PROPERTIES */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+:root {
+  --colr--white: rgb(245, 245, 245);
+  --text-bg-blur: 1.8px;
+  --text-bg-brightness: 0.8;
+  --text-shadow-color: rgba(34, 34, 34);
+  --canvas-bg-blur: 0.7px;
+  --canvas-bg-brightness: 0.85;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  overflow-x: hidden;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* PRELOADER  */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#preloader {
+  position: fixed;
+  z-index: 100;
+  background: rgb(34, 34, 34) url('/media/icons/preloaderImage.gif') no-repeat
+    center center;
+  background-size: max(5%, 10vh);
+  width: 100%;
+  height: 100vh;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* MAIN PROPERTIES */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#MainContainer {
+  position: relative;
+}
+
+#MainCanvas {
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: white;
+  filter: brightness(var(--canvas-bg-brightness));
+  filter: blur(var(--canvas-bg-blur));
+}
+
+#MainContent {
+  position: absolute;
+  color: var(--colr--white);
+  width: min(95%, 1000px);
+  left: 50%;
+  transform: translate(-50%);
+  -webkit-overflow-scrolling: touch;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* FIRST PAGE */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#pageOne {
+  text-align: left;
+  /* backdrop-filter: brightness(var(--text-bg-brightness))
+    blur(var(--text-bg-blur)); */
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+  margin-top: 34vh;
+  margin-bottom: 38vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-left: 15px;
+}
+
+@media (max-width: 600px) {
+  /* for mobile */
+  #pageOne {
+    margin-top: 32vh;
+  }
+}
+
+#pageOneNameText {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(40px, 55pt, 9vw);
+  text-shadow: 2px 2px 2px var(--text-shadow-color);
+  line-height: 1.6;
+  letter-spacing: 2px;
+}
+#pageOneSubText,
+#pageOneTopText {
+  font-family: 'Fira Code', monospace;
+  font-size: clamp(9px, 10pt, 18px);
+  max-width: min(450px, 90vw);
+  text-shadow: 2px 2px 2px var(--text-shadow-color);
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* SECOND PAGE */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#pageTwo {
+  text-align: left;
+  /* backdrop-filter: brightness(var(--text-bg-brightness))
+    blur(var(--text-bg-blur)); */
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+  margin-top: 34vh;
+  margin-bottom: 34vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-left: 15px;
+}
+
+#pageTwoTopText {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(25px, 25pt, 6vw);
+  text-shadow: 2px 2px 2px var(--text-shadow-color);
+  line-height: 1.5;
+  letter-spacing: 1.8px;
+}
+
+#pageTwoTable {
+  max-width: min(650px, 90vw);
+  border-collapse: separate;
+  border-spacing: 0px 25px;
+}
+.pagetwoTableHeadings {
+  font-family: 'Source Code Pro', monospace;
+  text-align: left;
+  vertical-align: top;
+  font-size: clamp(14px, 11pt, 18px);
+}
+.pageTwoTableDescriptions {
+  font-family: 'Fira Code', monospace;
+  font-size: clamp(9px, 10pt, 15px);
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* Third PAGE */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#pageThree {
+  text-align: left;
+  /* backdrop-filter: brightness(var(--text-bg-brightness))
+    blur(var(--text-bg-blur)); */
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.4);
+  margin-top: 34vh;
+  margin-bottom: 34vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-left: 10px;
+}
+
+#pageThreeTopText {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(25px, 25pt, 6vw);
+  text-shadow: 2px 2px 2px var(--text-shadow-color);
+  line-height: 1.5;
+  letter-spacing: 1.8px;
+  margin-bottom: 30px;
+}
+
+.pageThreeEachContainer {
+  width: min(90vw, 700px);
+  margin-bottom: 40px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  transition: transform 0.5s ease;
+  /* filter: grayscale(30%) opacity(85%) contrast(85%); */
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.pageThreeEachContentContainer {
+  padding: min(39vh, 300px) 10px 10px;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.6) 80%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  color: white;
+}
+
+.pageThreeCardtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(15px, 12pt, 4vw);
+  text-shadow: 1px 1px 4px var(--text-shadow-color);
+  line-height: 1.5;
+  letter-spacing: 1.65px;
+}
+
+.pageThreeCardDescription {
+  font-family: 'Fira Code', monospace;
+  font-size: clamp(9px, 10pt, 14px);
+}
+
+/* Adding Images per Card */
+#pageThreeContainer1 {
+  background-image: url('../media/cards/cardOne.png');
+  background-size: cover;
+}
+
+#pageThreeContainer2 {
+  background-image: url('../media/cards/cardTwo.png');
+  background-size: cover;
+}
+
+#pageThreeContainer3 {
+  background-image: url('../media/cards/cardThree.png');
+  background-size: cover;
+}
+
+@media (pointer: fine) {
+  .pageThreeEachContainer:hover {
+    transform: translateY(-3%);
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* Fourth PAGE */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+#pageFour {
+  text-align: left;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+  margin-top: 34vh;
+  margin-bottom: 38vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 10px;
+  padding-bottom: 4px;
+}
+
+#pageFourTopText {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(25px, 25pt, 6vw);
+  text-shadow: 2px 2px 2px var(--text-shadow-color);
+  line-height: 1.5;
+  letter-spacing: 1.8px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+}
+#pageFourSubText {
+  font-family: 'Fira Code', monospace;
+  font-size: clamp(9px, 10pt, 18px);
+  max-width: min(450px, 90vw);
+  text-shadow: 2px 2px 2px var(--text-shadow-color);
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.92);
+  padding-left: 15px;
+}
+#pageFourIconsContainer {
+  text-align: center;
+  margin-right: 10px;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.pageFourEachIcon {
+  display: inline;
+  padding: 0 5px;
+}
+
+.pageFourEachIconImage {
+  width: 30px;
+  transition: transform 0.1s ease;
+}
+
+@media (pointer: fine) {
+  .pageFourEachIconImage:hover {
+    transform: translateY(-5%);
+  }
+}
