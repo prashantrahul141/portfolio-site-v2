@@ -1,15 +1,15 @@
 // @ts-ignore
-import * as THREE from './threejs_modules/three.module.js';
+import * as THREE from 'https://unpkg.com/three@0.127.0/build/three.module.js';
 // @ts-ignore
-import { OrbitControls } from './threejs_modules/OrbitControls.js';
+import { OrbitControls } from 'https://unpkg.com/three@0.127.0/examples/jsm/controls/OrbitControls.js';
 // @ts-ignore
-import { RenderPass } from './threejs_modules/RenderPass.js';
+import { RenderPass } from 'https://unpkg.com/three@0.127.0/examples/jsm/postprocessing/RenderPass.js';
 // @ts-ignore
-import { EffectComposer } from './threejs_modules/EffectComposer.js';
+import { EffectComposer } from 'https://unpkg.com/three@0.127.0/examples/jsm/postprocessing/EffectComposer.js';
 // @ts-ignore
-import { UnrealBloomPass } from './threejs_modules/UnrealBloomPass.js';
+import { UnrealBloomPass } from 'https://unpkg.com/three@0.127.0/examples/jsm/postprocessing/UnrealBloomPass.js';
 // @ts-ignore
-import { FilmPass } from './threejs_modules/FilmPass.js';
+import { FilmPass } from 'https://unpkg.com/three@0.127.0/examples/jsm/postprocessing/FilmPass.js';
 
 import Earth from './Earth.js';
 import Stars from './Stars.js';

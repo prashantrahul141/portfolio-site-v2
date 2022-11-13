@@ -1,5 +1,5 @@
 // @ts-ignore
-import * as THREE from './threejs_modules/three.module.js';
+import * as THREE from 'https://unpkg.com/three@0.127.0/build/three.module.js';
 
 // Constants
 const sunRadius = 23;
