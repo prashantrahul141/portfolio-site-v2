@@ -10,7 +10,7 @@ const initiaEarthPosition = [0, 0, 0];
 const Earth = new THREE.Mesh(new THREE.SphereGeometry(earthRadius, earthSegments, earthSegments), new THREE.MeshPhongMaterial({
     map: textureLoader.load('../media/earthMap.jpg'),
     bumpMap: textureLoader.load('../media/bumpMap.jpg'),
-    bumpScale: 0.04,
+    bumpScale: 0.08,
     specularMap: textureLoader.load('../media/specularMap.png'),
     specular: new THREE.Color('grey'),
     shininess: earthShininess,
