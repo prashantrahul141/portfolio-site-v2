@@ -8,13 +8,27 @@
     <link rel="icon" type="image/png" href="/media/icons/favicon.ico" />
   </head>
   <body>
+    <!-- PRELOADER -->
     <div id="preloader"></div>
+    <style type="text/css">
+      #preloader {
+        position: fixed;
+        z-index: 100;
+        background: rgb(34, 34, 34) url('/media/icons/preloaderImage.gif')
+          no-repeat center center;
+        background-size: max(5%, 10vh);
+        width: 100%;
+        height: 100vh;
+      }
+    </style>
     <script>
       const loader = document.getElementById('preloader');
       window.addEventListener('load', () => {
         loader.style.display = 'none';
       });
     </script>
+
+    <!-- MAIN CONTENT -->
     <main id="MainContainer">
       <canvas id="MainCanvas"> </canvas>
 

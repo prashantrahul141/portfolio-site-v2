@@ -1,17 +1,4 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* PRELOADER  */
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-#preloader {
-  position: fixed;
-  z-index: 100;
-  background: rgb(34, 34, 34) url('/media/icons/preloaderImage.gif') no-repeat
-    center center;
-  background-size: max(5%, 10vh);
-  width: 100%;
-  height: 100vh;
-}
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* MAIN PROPERTIES */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #MainContainer {
