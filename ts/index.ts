@@ -104,21 +104,21 @@ if (!ENABLECONTROLLERS) {
 }
 
 // Mouse Trails
-let mousePos = { x: 0, y: 0 };
-const handleMouseMove = (event: MouseEvent) => {
-  mousePos.x = event.x;
-  mousePos.y = event.y;
-};
+// let mousePos = { x: 0, y: 0 };
+// const handleMouseMove = (event: MouseEvent) => {
+//   mousePos.x = event.x;
+//   mousePos.y = event.y;
+// };
 
 // handeling window resize
-const onWindowResize = () => {
-  Renderer.setSize(window.innerWidth, window.innerHeight);
-  Camera.aspect = window.innerWidth / window.innerHeight;
-  Camera.updateProjectionMatrix();
-};
+// const onWindowResize = () => {
+//   Renderer.setSize(window.innerWidth, window.innerHeight);
+//   Camera.aspect = window.innerWidth / window.innerHeight;
+//   Camera.updateProjectionMatrix();
+// };
 
 // Event Listeners
-window.addEventListener('mousemove', handleMouseMove);
+// window.addEventListener('mousemove', handleMouseMove);
 
 let currentHeight = 0;
 let maxMappingValue = 80; // kepping track of max value of what scroll percentage can get for difference devices.
