@@ -17,7 +17,7 @@
 #MainContent {
   position: absolute;
   color: var(--colr--white);
-  width: min(95%, 1000px);
+  width: min(95%, 700px);
   left: 50%;
   transform: translate(-50%);
   -webkit-overflow-scrolling: touch;
@@ -32,7 +32,6 @@
     blur(var(--text-bg-blur)); */
   padding: 10px;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
   margin-top: 34vh;
   margin-bottom: 38vh;
   padding-left: 15px;
@@ -69,11 +68,8 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #pageTwo {
   text-align: left;
-  /* backdrop-filter: brightness(var(--text-bg-brightness))
-    blur(var(--text-bg-blur)); */
   padding: 10px;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
   margin-top: 34vh;
   margin-bottom: 34vh;
   padding-left: 15px;
@@ -110,11 +106,8 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #pageThree {
   text-align: left;
-  /* backdrop-filter: brightness(var(--text-bg-brightness))
-    blur(var(--text-bg-blur)); */
   padding: 10px;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.4);
   margin-top: 34vh;
   margin-bottom: 34vh;
   padding-left: 10px;
@@ -132,15 +125,14 @@
 }
 
 .pageThreeEachContainer {
-  width: min(90vw, 700px);
+  width: min(90vw, 100%);
   margin-bottom: 40px;
-  border-radius: 8px;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
   transition: transform 0.5s ease;
-  /* filter: grayscale(30%) opacity(85%) contrast(85%); */
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  box-shadow: 0px 0px 10px rgba(170, 170, 170, 0.4);
+  border-radius: 8px;
 }
 .pageThreeEachContentContainer {
   padding: min(39vh, 300px) 10px 10px;
@@ -150,6 +142,7 @@
     rgba(0, 0, 0, 0.7) 100%
   );
   color: white;
+  border-radius: 8px;
 }
 
 .pageThreeCardtitle {
@@ -194,7 +187,6 @@
 #pageFour {
   text-align: left;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
   margin-top: 34vh;
   margin-bottom: 38vh;
   padding-top: 10px;
