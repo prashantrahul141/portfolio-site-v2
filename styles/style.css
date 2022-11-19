@@ -131,7 +131,7 @@
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  box-shadow: 0px 0px 10px rgba(170, 170, 170, 0.4);
+  box-shadow: 0px 0px 10px rgba(170, 170, 170, 0.22);
   border-radius: 8px;
 }
 .pageThreeEachContentContainer {
