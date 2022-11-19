@@ -26,7 +26,7 @@ const VELOCITYCOEEFICIENT = 0.09;
 // Initializing
 let Scene = new THREE.Scene();
 // Setting up Camera;
-let Camera = new THREE.PerspectiveCamera(40, window.innerWidth / window.innerHeight, 0.1, 1000);
+let Camera = new THREE.PerspectiveCamera(40, window.innerWidth / window.innerHeight, 1, 100);
 Camera.position.z = INITIALCAMERAPOSITION;
 // Setting up Renderer
 let Renderer = new THREE.WebGLRenderer({
@@ -90,6 +90,7 @@ if (!ENABLECONTROLLERS) {
 // };
 // Event Listeners
 // window.addEventListener('mousemove', handleMouseMove);
+// window.addEventListener('resize', onWindowResize);
 let currentHeight = 0;
 let maxMappingValue = 80; // kepping track of max value of what scroll percentage can get for difference devices.
 let lastMappedValue = 0;
