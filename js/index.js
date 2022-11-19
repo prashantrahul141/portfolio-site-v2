@@ -20,7 +20,7 @@ const ENABLEHELPERS = false;
 const ENABLECONTROLLERS = false;
 const EARTHROTATIONSPEED = 0.0015;
 const DIRECTIONLIGHTDIST = 35;
-const INITIALCAMERAPOSITION = 3.2;
+const INITIALCAMERAPOSITION = animationCurves.circleRadius;
 const MAXFPS = 1000 / 60;
 const VELOCITYCOEEFICIENT = 0.09;
 // Initializing
