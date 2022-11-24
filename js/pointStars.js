@@ -8,7 +8,6 @@ const customMaterial1 = new THREE.ShaderMaterial({
     fragmentShader: document.getElementById('fragmentShaderStars1').textContent,
     side: THREE.BackSide,
     blending: THREE.AdditiveBlending,
-    transparent: true,
 });
 const customMaterial2 = new THREE.ShaderMaterial({
     uniforms: {},
@@ -18,7 +17,6 @@ const customMaterial2 = new THREE.ShaderMaterial({
     fragmentShader: document.getElementById('fragmentShaderStars2').textContent,
     side: THREE.BackSide,
     blending: THREE.AdditiveBlending,
-    transparent: true,
 });
 const newRandomSpherePoint = (r) => {
     let x = Math.random() * Math.PI * 2;
@@ -28,9 +26,8 @@ const newRandomSpherePoint = (r) => {
 };
 const cameraPos = new THREE.Vector3(0, 0, 2);
 let pointStars = [];
-for (let i = 0; i < 200; i++) {
+for (let i = 0; i < 100; i++) {
     const size = Math.random() * 0.25;
-    // const geometry = new THREE.CircleGeometry(size, 16);
     const geometry = new THREE.SphereGeometry(size, 16);
     geometry.lookAt(cameraPos);
     let material_ = Math.random() > 0.5 ? customMaterial1 : customMaterial2;
