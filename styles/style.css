@@ -160,17 +160,17 @@
 
 /* Adding Images per Card */
 #pageThreeContainer1 {
-  background-image: url('../media/cards/cardOne.png');
+  background-image: url('../media/cards/cardOne.webp');
   background-size: cover;
 }
 
 #pageThreeContainer2 {
-  background-image: url('../media/cards/cardTwo.png');
+  background-image: url('../media/cards/cardTwo.webp');
   background-size: cover;
 }
 
 #pageThreeContainer3 {
-  background-image: url('../media/cards/cardThree.png');
+  background-image: url('../media/cards/cardThree.webp');
   background-size: cover;
 }
 
