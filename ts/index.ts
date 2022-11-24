@@ -21,9 +21,9 @@ import animationCurves from './animationCurves.js';
 const ENABLEHELPERS = false;
 const ENABLECONTROLLERS = false;
 const EARTHROTATIONSPEED = 0.0015;
-const DIRECTIONLIGHTDIST = 35;
+const DIRECTIONLIGHTDIST = 10;
 const INITIALCAMERAPOSITION = animationCurves.circleRadius;
-const MAXFPS = 1000 / 60;
+const MAXFPS = 1000 / 50;
 const VELOCITYCOEEFICIENT = 0.09;
 
 // Initializing
@@ -103,24 +103,6 @@ if (!ENABLECONTROLLERS) {
   Controls.enabled = false;
 }
 
-// Mouse Trails
-// let mousePos = { x: 0, y: 0 };
-// const handleMouseMove = (event: MouseEvent) => {
-//   mousePos.x = event.x;
-//   mousePos.y = event.y;
-// };
-
-// handeling window resize
-// const onWindowResize = () => {
-//   Renderer.setSize(window.innerWidth, window.innerHeight);
-//   Camera.aspect = window.innerWidth / window.innerHeight;
-//   Camera.updateProjectionMatrix();
-// };
-
-// Event Listeners
-// window.addEventListener('mousemove', handleMouseMove);
-// window.addEventListener('resize', onWindowResize);
-
 let currentHeight = 0;
 let maxMappingValue = 80; // kepping track of max value of what scroll percentage can get for difference devices.
 let lastMappedValue = 0;
@@ -134,11 +116,6 @@ const animate = (newTime: number) => {
   let desiredVecocity =
     VELOCITYCOEEFICIENT * (currentHeight - renderAlgorithmHeight);
   renderAlgorithmHeight += desiredVecocity;
-
-  if (currentHeight > maxMappingValue) {
-    // kepping track of max value of what scroll percentage can get for difference devices.
-    maxMappingValue = currentHeight;
-  }
 
   // refresing mapped value.
   mappedValue = utils.map_(renderAlgorithmHeight, 0, maxMappingValue, 0, 100);
