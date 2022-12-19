@@ -66,7 +66,11 @@ Scene.add(directionLight);
 
 // Stars
 Scene.add(Stars.Stars);
-pointStars.pointStars.map((eachPointStar) => Scene.add(eachPointStar));
+if (typeof screen.orientation !== 'undefined') {
+  // adding point stars to scene only when user device to desktop
+  // to avoid performance issue on mobile devices.
+  pointStars.pointStars.map((eachPointStar) => Scene.add(eachPointStar));
+}
 
 // Earth
 Scene.add(Earth.Earth);
