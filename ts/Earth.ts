@@ -12,10 +12,12 @@ const initiaEarthPosition = [0, 0, 0];
 const Earth = new THREE.Mesh(
   new THREE.SphereGeometry(earthRadius, earthSegments, earthSegments),
   new THREE.MeshPhongMaterial({
-    map: textureLoader.load('../media/earthMap.webp'),
-    bumpMap: textureLoader.load('../media/bumpMap.webp'),
+    map: textureLoader.load('../portfolio-site-v2/media/earthMap.webp'),
+    bumpMap: textureLoader.load('../portfolio-site-v2/media/bumpMap.webp'),
     bumpScale: 0.08,
-    specularMap: textureLoader.load('../media/specularMap.webp'),
+    specularMap: textureLoader.load(
+      '../portfolio-site-v2/media/specularMap.webp'
+    ),
     specular: new THREE.Color('grey'),
     shininess: earthShininess,
   })
@@ -25,7 +27,7 @@ const Earth = new THREE.Mesh(
 const Cloud = new THREE.Mesh(
   new THREE.SphereGeometry(earthRadius + 0.003, earthSegments, earthSegments),
   new THREE.MeshPhongMaterial({
-    map: textureLoader.load('../media/cloudMap.webp'),
+    map: textureLoader.load('../portfolio-site-v2/media/cloudMap.webp'),
     transparent: true,
   })
 );

@@ -5,7 +5,7 @@ const textureLoader = new THREE.TextureLoader();
 const Stars = new THREE.Mesh(
   new THREE.SphereGeometry(90, 64, 64),
   new THREE.MeshBasicMaterial({
-    map: textureLoader.load('../media/starsBackground.webp'),
+    map: textureLoader.load('../portfolio-site-v2/media/starsBackground.webp'),
     side: THREE.BackSide,
   })
 );
